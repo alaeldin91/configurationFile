@@ -1,0 +1,23 @@
+npm install @okta/okta-signin-widget@6.2.0
+npm install @okta/okta-angular@5.2.0
+npm install @okta/okta-auth-js@6.4.0
+ng generate component components/login
+ng add angular-datatables
+ng add @ng-bootstrap/ng-bootstrap@14
+ng add @ng-bootstrap/ng-bootstrap@15
+ ng add @angular/material
+ npm i --save-dev @types/jquery   
+limat data for certain data
+ng generate component component/product
+ng generate class  common/product
+ng generate service service/product
+ ng add angular-datatables@14last fter below
+npm install jquery --save
+npm install datatables.net --save
+npm install datatables.net-dt --save
+npm install angular-datatables --save
+npm install @types/jquery --save-dev
+npm install @types/datatables.net --save-dev
+npm install bootstrap --save
+ng generate service service/user
+https://github.com/nihira2020/invoiceapp/blob/master/src/app/listing/listing.component.ts

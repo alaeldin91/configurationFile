@@ -1,0 +1,44 @@
+composer create-project --prefer-dist laravel/laravel:8.x roleAndPermission
+setup  community material theme
+ setup laravel artisan
+laravel blade snippet
+PHP Intelephense
+Laravel Snippets
+laravel-goto-components
+PHP DocBlocker
+PHP DocComments
+PHP Namespace Resolver
+Beautify
+DotENV
+Paste JSON as Code
+Tailwind CSS IntelliSense
+VSCode Great Icons
+Database Client
+setup crud
+composer require laravel/passport
+add // config/app.php
+
+'providers' =>[
+ Laravel\Passport\PassportServiceProvider::class,
+ ],
+migrate dataBase
+php artisan passport:install
+go to App/Providers/AuthServiceProvider.php,
+go  to config Auth.php
+ 'api' => [ 
+             'driver' => 'passport', 
+             'provider' => 'users', 
+         ], 
+add  App/Providers/AuthServiceProvider.php, Go to App/Providers/AuthServiceProvider.php and update
+this line => Register Passport::routes(); inside of boot method:
+create php artisan make:model Product -m
+php artisan 
+rOUTE CREATE AND UPDATE uSER mODEL dELETE NOTIFIACABLE
+
+/**  jwt login and register 
+
+composer require tymon/jwt-auth
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+php artisan make:migration create_roles_table --create=roles
+php artisan make:migration create_users_table --create=users

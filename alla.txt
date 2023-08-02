@@ -1,0 +1,99 @@
+
+ how Setup Project:-
+ 
+ 1- download  php 7.3.
+ 
+ 2-Update windows environment variable path to point to your php install folder.
+ 
+ 3-dowanload project .
+ 
+ 4-copy project to xampp httdoc.
+ 
+ 5- Run composer install.
+ 
+ 6-edit Rename example env to .env.
+ 
+ 7-Run php artisan key:generate.
+ 
+ 8-Run php artisan migrate.
+ 
+ 9-Run php artisan db:seed to run seeders, if any.
+ 
+ 10-Run php artisan serve.
+ 
+ //copy api 
+ http://127.0.0.1:8000/api/journey
+ 11- dowanload postman and install postman
+ 12- go to open new tap choose post request and paste  http://127.0.0.1:8000/api/journey
+ 13- go to body and choose raw and Gson  and add Object array such as 
+ [
+
+{
+"type": "train",
+"number": "23A",
+"from": "Beirut",
+"to": "Turkey",
+"seat": "15B",
+"gate": null,
+"counter": null
+},
+{
+"type": "airplane",
+"number": "flight SK22",
+"from": "Aleppo",
+"to": "Montreal YUL",
+"seat": "7B",
+"gate": "22",
+"counter": null
+},
+{
+"type": "bus",
+"number": "airport",
+"from": "Turkey",
+"to": "Ibiza Airport",
+"seat": null,
+"gate": null,
+"counter": null
+},
+{
+"type": "airplane",
+"number": "flight SK455",
+"from": "Ibiza Airport",
+"to": "Aleppo",
+"seat": "3A",
+"gate": "15B",
+"counter": "344"
+},
+{
+"type": "train",
+"number": "23A",
+"from": "Beirut",
+"to": "Turkey",
+"seat": "15B",
+"gate": null,
+"counter": null
+},
+{
+"type": "airplane",
+"number": "flight SK22",
+"from": "Aleppo",
+"to": "Montreal YUL",
+"seat": "7B",
+"gate": "22",
+"counter": null
+},
+{
+"type": "bus",
+"number": "airport",
+"from": "Turkey",
+"to": "Ibiza Airport",
+"seat": null,
+"gate": null,
+"counter": null
+},
+]
+
+14-click send to send request
+
+- for simplecity  we used shuffle algorithm to randomize the input and the effieciency of the  shuffle is o(n).
+- we also provided function for checking the broken chain in the list(journey List). 

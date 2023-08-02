@@ -1,0 +1,21 @@
+run zookeeper Server
+.\bin\window\zookeeper-server-start.bat .\config\zookeeper.properties
+run server kafka
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+create topic 
+kafka-topics.bat --create --topic topic-example --bootstrap-server localhost:9092
+
+create producer 
+.\bin\windows\kafka-console-producer.bat --topic topic-example --bootstrap-server localhost:9092
+enter
+>hello world
+>kafka topic event
+>demo1
+>demo2
+ctrl+c=> y
+create consumer
+.\bin\windows\kafka-console-consumer.bat --topic topic-example --bootstrap-server localhost:9092
+from begining consumer
+.\bin\windows\kafka-console-consumer.bat --topic topic-example --from-beginning  --bootstrap-server localhost:9092
+ check kafka
+.\bin\windows\kafka-console-consumer.bat --topic alaeldin --from-beginning --bootstrap-server localhost:9092

@@ -1,0 +1,68 @@
+go to directory project cd
+RUN CREATE IMAGE 
+ docker build -t projectname .
+check docker buid virtual mechine
+docker images
+
+aDD rELAESE IMAGE 
+docker build -t imageName:0.1.RELEASE  .
+show all details container
+docker ps
+docker run 
+ docker run -p 8081:8080  image name
+docker run background containear
+docker run -p 8081:8080 -d imageName
+logs
+docker logs -f 1442بداية  الرقم
+docker stop 1442
+
+docker push
+docker login 
+docker tag imageName alaeldinmusa/imageName:0.1.RELEASE
+docker images
+docker push alaeldinmusa/imageName:0.1.RELEASE
+docker pull alaeldinmusa/imageName:0.1.RELEASE
+docker pull mysql:latest
+docker images
+docker pull mariadb:latest
+docker pull mysql
+create docker network
+ network create springboot-mysql-net
+view Network
+docker network ls
+create another
+docker network create springboot-mysql-net
+run docker  Image in to docker container
+docker run --name  mysqldb --network springboot-mysql-net -e MYSQL_ROOT_PASSWORD=root -e MYSQLDATABASE=employee_db -d mysql
+view db
+docker ps
+docker logs -f id ps
+docker exec mysql
+>docker exec -it 68c4 bash
+bash-4.4# myql -u root -p enter 
+password root
+view databases show databases ; 
+
+implemenation docker file
+create docker file
+create Application-docker.propertise
+config Application.propertise
+Add  to Application.propertise spring.profiles.active = docker
+build project lifecycle-> clean_package 
+build jar file 
+go to path file docker file your project cd 
+docker build -t springboot-restful-webservice:0.1.RELEASE
+springboot-restful-webservice:this is image path
+docker build -t springboot-restful-webservice . NOT TAG
+docker run --network springboot-mysql-net --name springboot-mysql-container r -p 8080:8080 imageName
+docker run --network springboot-mysql-net --name sb-springboot-mysql-container r -p 8080:8080 imageName
+run in background
+use databasename
+docker rmi id
+docker compose up pull image compose
+run all docker in background
+docker-compose up -d
+docker stop in background
+docker-compose down
+docker build service 
+docker-compose up -d --build
